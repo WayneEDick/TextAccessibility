@@ -54,10 +54,10 @@
  //Measurement Listeners
  compute.addEventListener('click',
   function () {
-   let l= FDS_LockerObj;
-   let m= Meas_Obj;
-   l.setupBox('user');
-   l.setupBox('compare')
+   let l= new FDS_Locker();
+   let m= new Meas_Measure(l);
+   //l.setupBox('user','addEventListener');
+   //l.setupBox('compare', 'addEventListener');
    m.dfnStruct();
    document.getElementById('Locker').style.visibility = "visible";
    document.getElementById("ComputeGroup").style.display = 'block';

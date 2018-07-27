@@ -2,8 +2,8 @@
  * Created by Wayne on 5/18/2017.
  */
 (function (){
-function Measure () {
- this.l= FDS_LockerObj;
+function Measure (l) {
+ this.l= l;
 
 }
 Measure.prototype.dfnStruct = function () {
@@ -38,7 +38,7 @@ Measure.prototype.fontTSetWidth = function (box) {
  let wNum = this.boxWidth(box);// Initial width
  // Approximate the font seqW
  for (let wNew=wNum; (hNum>=this.boxHeight(box)); wNew-=1)  {
-  console.log(wNew);
+  //console.log(wNew);
   box.style.width= wNew.toString()+'px';
   wNum = wNew;
   if (wNew<1) break;
@@ -147,5 +147,5 @@ Measure.prototype.statsOut = function () {
  }
  };
 
-window.Meas_Obj = new Measure();
+window.Meas_Measure = Measure;
 })();
