@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Font Family Form</title>
 	<!-- Web Font Links-->
+	<!-- Popularity Order --"
 	<!--
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto">
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans">
@@ -53,9 +54,10 @@
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Abril+Fatface">
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Exo+2">
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Asap">
-	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Fira+Sans">
-	-->
-	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Anton">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Fira+Sans">	-->
+	<!-- Alphabetic Order-->
+	<!--link rel="stylesheet" href="//fonts.googleapis.com/css?family=Abril+Fatface"-->
+	<!--link rel="stylesheet" href="//fonts.googleapis.com/css?family=Anton"-->
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Arimo">
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Arvo">
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Asap">
@@ -85,7 +87,7 @@
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto+Serif">
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Nunito">
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans">
-	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans+Condensed">
+	<!--link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans+Condensed"-->
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Oswald">
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Oxygen">
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Playfair+Display">
@@ -98,9 +100,9 @@
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto+Condensed">
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto+Slab">
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto+Mono">
-	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Slabo+27px">
-	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro">
-	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Titillium+Web">
+	<!--link rel="stylesheet" href="//fonts.googleapis.com/css?family=Slabo+27px"-->
+	<!--link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro"-->
+	<!--link rel="stylesheet" href="//fonts.googleapis.com/css?family=Titillium+Web"-->
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu">
 	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz">
 </head>
@@ -109,13 +111,13 @@
 	<p>
 		<label for="testInputU">Option Chosen</label>
 		<input id="testInputU" type="text">
-		<button id="FontListU" onClick="showForm('U')">View a font</button>
+		<button id="fontListU">View a font</button>
 	</p>
 	<form id="formU"></form>
 	<p>
 		<label for="testInputC">Option Chosen</label>
 		<input id="testInputC" type="text">
-		<button id="FontListC" onClick="showForm('C')">View a font</button>
+		<button id="fontListC">View a font</button>
 	</p>
 	<form id="formC"></form>
 </section>
@@ -281,10 +283,10 @@
 		<label for="Open Sans">Open Sans (Il1 5S 0O)</label>
 		<input type="radio" id="Open Sans" name="fam" value="">
 		</p>
-		<p style="font-family:'Open Sans Condensed';">
+		<!--p style="font-family:'Open Sans Condensed';">
 		<label for="Open Sans Condensed">Open Sans Condensed (Il1 5S 0O)</label>
 		<input type="radio" id="Open Sans Condensed" name="fam" value="">
-		</p>
+		</p-->
 		<p style="font-family:'Oswald';">
 		<label for="Oswald">Oswald (Il1 5S 0O)</label>
 		<input type="radio" id="Oswald" name="fam" value="">
@@ -333,14 +335,14 @@
 		<label for="Roboto Slab">Roboto Slab (Il1 5S 0O)</label>
 		<input type="radio" id="Roboto Slab" name="fam" value="">
 		</p>
-		<p style="font-family:'Slabo';">
+		<!--p style="font-family:'Slabo';">
 		<label for="Slabo">Slabo (Il1 5S 0O)</label>
 		<input type="radio" id="Slabo" name="fam" value="">
-		</p>
-		<p style="font-family:'Source Sans';">
+		</p-->
+		<!--p style="font-family:'Source Sans';">
 		<label for="Source Sans">Source Sans (Il1 5S 0O)</label>
 		<input type="radio" id="Source Sans" name="fam" value="">
-		</p>
+		</p-->
 		<p style="font-family:'Times';">
 		<label for="Times">Times (Il1 5S 0O)</label>
 		<input type="radio" id="Times" name="fam" value="">
@@ -349,10 +351,10 @@
 		<label for="Times New Roman">Times New Roman (Il1 5S 0O)</label>
 		<input type="radio" id="Times New Roman" name="fam" value="">
 		</p>
-		<p style="font-family:'Titillium';">
+		<!--p style="font-family:'Titillium';">
 		<label for="Titillium">Titillium (Il1 5S 0O)</label>
 		<input type="radio" id="Titillium" name="fam" value="">
-		</p>
+		</p-->
 		<p style="font-family:'Trebuchet MS';">
 			<label for="Trebuchet MS">Trebuchet MS (Il1 5S 0O)</label>
 			<input type="radio" id="Trebuchet MS" name="fam" value="">
@@ -375,20 +377,7 @@
 </article>
 </body>
 <script>
-	function showForm(context) {
-		document.getElementById(`form${context}`).style.display='block';
-	}
-	function getFontFamily (fldSet){
-		let inpTab=fldSet.getElementsByTagName('input');
-		for (let i=0; i<inpTab.length; i++) {
-			if (inpTab[i].checked) {
-				alert(inpTab[i].id);
-			}
-		}
-	}
-</script>
-<script>
-	(	function  () {
+	(	function loadInterface () {
 			// context structures
 			const label = 0;
 			const input = 1;
@@ -406,15 +395,14 @@
 			let fldSet = document.getElementById('fontRadio');
 			let inpTab = fldSet.getElementsByTagName('p');
 			contextObj.user.e.innerHTML = fldSet.innerHTML;
-			//todo legend
 			contextObj.compare.e.innerHTML = fldSet.innerHTML;
-			//todo legend
 			// loop by context
 			for (let fld in contextObj) {
-				let cObj = contextObj[fld];
-				let context = cObj.name;
+				let cFldSet = contextObj[fld];
+				let context = cFldSet.name;
 				let formX = document.getElementById(`form${context}`);
-				let loopTab = cObj.e.getElementsByTagName('p');
+				let loopTab = cFldSet.e.getElementsByTagName('p');
+				let legend=document.createElement('legend');
 				// loop by paragraph element
 				// initially all elements are equal
 				// we change the loopTab
@@ -426,11 +414,72 @@
 					rbl[input].value = rbi[input].id;
 					rbl[input].id = rbl[label].htmlFor;
 				}
-				formX.innerHTML = cObj.e.outerHTML;
+				cFldSet.e.id=`fieldset${cFldSet.name}`;
+				legend.innerText=`Choose the ${(context==='U') ? 'user': 'author'} font`;
+				formX.innerHTML = cFldSet.e.outerHTML;
+				formX.insertBefore(
+					legend,
+					document.getElementById(cFldSet.e.id)
+				);
 				formX.style.display = 'none';
 			}
 		document.getElementById(`fontFamilyForm`).remove();
 		}
 	)()
 </script>
+<script>
+	//todo look for .lnegth-1
+	(function Events (){
+
+		// Radio Button Events
+		let contextObj = {
+			user: {
+				name: 'U',
+				e: document.getElementById(`fieldsetU`)
+			},
+			compare: {
+				name: 'C',
+				e: document.getElementById(`fieldsetC`)
+			}
+		};
+		//todo fix onclicks
+		//////////////////////
+		// Define some events
+		for (let c in contextObj) {
+			contextObj[c].e.addEventListener(
+				'click',
+				function () {
+					let radioTab = contextObj[c].e.getElementsByTagName('input');
+					let fId = `form${contextObj[c].name}`;
+					let f=document.getElementById(fId);
+					let inpId = `testInput${contextObj[c].name}`;
+					let inp= document.getElementById(inpId)
+					for (let i = 0; i < radioTab.length; i++) {
+						if (radioTab[i].checked) {
+							inp.value= radioTab[i].value
+							alert(radioTab[i].value);
+							f.style.display='none';
+						}
+					}
+				}
+			);
+		}
+		////////////////////////
+		// Select Font Family from a List
+		for (let c in contextObj) {
+			let bId=`fontList${contextObj[c].name}`;
+			let fId= `form${contextObj[c].name}`
+			let b =	document.getElementById(bId);
+			let f = document.getElementById(fId);
+
+			//////////////////////
+			// display the family list
+			b.addEventListener('click',
+				function (){
+					f.style.display= 'block';
+				});
+		}
+	})()
+</script>
+
 </html>

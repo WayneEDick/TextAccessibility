@@ -1,9 +1,9 @@
 /**
  * Created by Wayne on 6/30/2017.
  */
+//todo look for loop limits .length-1
 // Open / Close Listeners
 (function () {
-
  // Open / Close Listeners
  // Font Elements
  let fOpen = document.getElementById('FontOpen');
@@ -70,8 +70,6 @@
    });
 })();
 
-// Help Listeners;
-(function (){})();
 
 //********************** End of Code  *************************
 
