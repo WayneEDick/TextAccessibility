@@ -4,6 +4,7 @@
 // Setup measurement structures for statistics gathering. The Font Data Structures (FDS)
 (function () {
 // HTML Locker Connecting Font and Character Strings
+// Todo de-rigidify numeric lookup
  const fam = 0, size = 1, lSp = 2, wSp =3;
  const usrIdx= 0, cmpIdx = 1;
 
@@ -22,9 +23,7 @@
  Locker.prototype.setupBox = function (context){
   //Create Box
   let box = document.createElement('p');
-  // HTML Font Forms
-  //this.uFontFormNode = document.getElementById('UserFontProp') ;
-  //this.cFontFormNode = document.getElementById('CompFontProp');
+  ///////////////////////////////////////
   // Set up the Measurement Text String
   let txtStr = document.getElementById('ChrStrText').value;
   let defaultString = ' !"#$%&' + "'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~";
@@ -39,7 +38,9 @@
   let boxDisplay = (context === 'user') ? this.uBoxDisplay : this.cBoxDisplay;
   // Input Forms for Fonts in HTML doc
   let fontFormNode= (context === 'user') ? document.getElementById('UserFontProp') : document.getElementById('CompFontProp');
-  let fFInput= fontFormNode.getElementsByTagName('input');
+  alert(context);
+  let fFInput= fontFormNode.getElementsByClassName('compile');
+  alert(fFInput.length);
   // Set up the Measurement Text String
   let textString = this.textString;
   let tsLen= this.textLen;

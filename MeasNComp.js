@@ -2,18 +2,14 @@
  * Created by Wayne on 5/18/2017.
  */
 (function (){
-function Measure (l) {
- this.l= l;
-
+function Measure () {
+ this.l= new window.FDS_Locker()
 }
+
 Measure.prototype.dfnStruct = function () {
  this.uBox = this.l.setupBox('user') ;
  this.cBox= this.l.setupBox('compare');
  this.len = this.l.textLen;
- /*this.uStartW = this.l.uWidth;
- this.cStartW = this.l.cWidth;
- this.l.uBox.width= this.uStartW;
- this.l.cBox.width= this.cStartW; /**/
  this.uWidth= this.fontTSetWidth(this.uBox);
  this.cWidth= this.fontTSetWidth(this.cBox);
  if (this.l.oneLen) {

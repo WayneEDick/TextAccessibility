@@ -1,10 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--todo
- 		1. Insert new user and author family paragraphs.
- 		2. Replace font family links and table.
- 		3. Append Load and Control Listeners.
--->
 <head>
  <meta charset="UTF-8">
  <title>Font Data Analysis</title>
@@ -166,19 +161,24 @@
   <button id="OpenUserFonts">Open User Font Section</button>
   <section id="UserFontContainer">
   <div id="UserFontProp" role="form">
-   <p>
+		<!-- User font Family Group -->
+		<!-- Font Family -->
+		<p>
     <label id="labelU" for="inputU">Font Family</label>
-    <input id="inputU" type="text">
+    <input id="inputU" type="text" class="compile">
     <button id="buttonU">Select Family</button>
-		<form id="formU"></form>
-		</p>
-   <p>
-   <p><label for="UserFontSize">Font Size in PX units</label>
-   <input id="UserFontSize" type="number" value="16" step="0.5"></p>
-   <p><label for="UserFontLetSp">Letter Spacing in EM units above normal</label>
-   <input id="UserFontLetSp" type="number" value="0" step="0.01"></p>
-   <p><label for="UserFontWdSp">Word Spacing in EM units above normal</label>
-   <input id="UserFontWdSp"  type="number" value="0" step="0.01"></p>
+	 </p>
+		<!-- Table of Families -- Runtime Input -->
+	 	<form id="formU"></form>
+		<!-- Font size -->
+		<p><label for="UserFontSize">Font Size in PX units</label>
+   <input id="UserFontSize" type="number" value="16" step="0.5" class="compile"></p>
+		<!-- Letter Spacing -->
+		<p><label for="UserFontLetSp">Letter Spacing in EM units above normal</label>
+   <input id="UserFontLetSp" type="number" value="0" step="0.01" class="compile"></p>
+		<!-- Word Spacing -->
+		<p><label for="UserFontWdSp">Word Spacing in EM units above normal</label>
+   <input id="UserFontWdSp"  type="number" value="0" step="0.01" class="compile"></p>
    <!--button-- id="LoadUserFont">Load User Font
    </button-->
   </div>
@@ -188,18 +188,24 @@
  <button id="OpenCompFont">Open Author Font Section</button>
  <section id="CompFontContainer">
   <div id="CompFontProp" role="form">
-   <p>
+		<!-- Comparison (author) Font Properties -->
+		<!-- Font Family -->
+		<p>
     <label id="labelC" for="inputC">Font Family</label>
-    <input id="inputC" type="text">
+    <input id="inputC" type="text" class="compile">
     <button id="buttonC">Select Family</button>
    </p>
+		<!-- Table of Font Families -- Runtime Insertion-->
 		<form id="formC"></form>
-   <p><label for="CompFontSize">Font Size PX units</label>
-   <input id="CompFontSize" type="number" value="16"></p>
-   <p><label for="CompFontLetSp">Letter Spacing in EM units above normal</label>
-    <input id="CompFontLetSp" type="number" value="0" step="0.01"></p>
-   <p><label for="CompFontWdSp">Word Spacing in EM units above normal</label>
-    <input id="CompFontWdSp"  type="number" value="0" step="0.01"></p>
+		<!-- Font Size -->
+		<p><label for="CompFontSize">Font Size PX units</label>
+   <input id="CompFontSize" type="number" value="16" class="compile"></p>
+		<!-- Letter Spacing -->
+		<p><label for="CompFontLetSp">Letter Spacing in EM units above normal</label>
+    <input id="CompFontLetSp" type="number" value="0" step="0.01" class="compile"></p>
+		<!-- Word Spacing -->
+		<p><label for="CompFontWdSp">Word Spacing in EM units above normal</label>
+    <input id="CompFontWdSp"  type="number" value="0" step="0.01" class="compile"></p>
   </div>
   <button id="CloseCompFont">Close the Author Font</button>
   </section>
