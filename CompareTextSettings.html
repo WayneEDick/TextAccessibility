@@ -1,60 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--todo
+ 		1. Insert new user and author family paragraphs.
+ 		2. Replace font family links and table.
+ 		3. Append Load and Control Listeners.
+-->
 <head>
  <meta charset="UTF-8">
  <title>Font Data Analysis</title>
- <!-- Web Font Links-->
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Slabo+27px">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto+Condensed">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Oswald">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Sans">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto+Slab">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans+Condensed">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Droid+Sans">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Droid+Serif">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto+Sans">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Arimo">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Playfair+Display">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Serif">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Titillium+Web">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Sans+Narrow">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Muli">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Poppins">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Bitter">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Indie+Flower">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Dosis">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Fjalla+One">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Hind">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Oxygen">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Anton">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Cabin">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Arvo">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto+Serif">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Inconsolata">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lobster">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Libre+Baskerville">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Crimson+Text">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Catamaran">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Nunito">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto+Mono">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Bree+Serif">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather+Sans">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Josefin+Sans">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Abril+Fatface">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Exo+2">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Asap">
- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Fira+Sans">
-<!-- Local Page Styles-->
+ <!-- Web Font Links in Alphabetic Order-->
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Arimo">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Arvo">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Asap">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Bitter">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Bree+Serif">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Cabin">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Catamaran">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Crimson+Text">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Dosis">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Droid+Sans">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Droid+Serif">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Exo+2">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Fira+Sans">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Fjalla+One">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Hind">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Indie+Flower">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Inconsolata">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Josefin+Sans">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Libre+Baskerville">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lobster">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather+Sans">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto+Sans">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto+Serif">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Nunito">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Oswald">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Oxygen">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Playfair+Display">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Poppins">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Sans">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Serif">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Sans+Narrow">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Raleway">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto+Condensed">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto+Slab">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto+Mono">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu">
+	<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz">
 <style>
   body {
    width: 65%;
@@ -62,7 +59,7 @@
    padding: 1% 10% 1% 10%;
   }
   * {
-   font-family: 'Source Sans Pro',  sans-serif;
+   /*font-family: 'Source Sans Pro',  sans-serif;*/
    font-size: 16px;
    line-height: 1.5;
    letter-spacing: 0.03em;
@@ -84,12 +81,14 @@
    padding: 0.5% 5% 1% 5%;
   }
   #ComputeGroup {padding: 0;}
-  #Overview {display: none;}
+  #Overview, #fontFamilyForm {display: none;}
   #FontGroup, #UserFontContainer,
   #CompFontContainer, #ChrStrGroup,
   #ComputeGroup, #zeroLength {
    display: none;
   }
+	#labelU, #labelC, #inputU, #inputC,
+	#buttonU, #buttonC {display: inline;}
   #Locker {
    visibility: hidden;
    padding: 0;
@@ -103,7 +102,7 @@
   .Measure {visibility: hidden;}
   .Display {
    word-wrap: normal;
-   text-allign: left;
+   text-align: left;
   }
   footer * {visibility:hidden;}
   /* Large Print exceptions*/
@@ -128,7 +127,7 @@
 <body>
  <header>
  <!-- Title [h1]-->
- <h1>Font Data Analysis</h1>
+ <h1>Text Personalization Analysis</h1>
  <!-- Lead Description [div with p's] -->
  <dl id="Overview">
   <dt>Objective </dt>
@@ -144,7 +143,7 @@
   <dd>Paired Input for comparison purposes
    <ol>
     <li>One input character string as above</li>
-    <li>Two fonts with varying values of the parameters above for the purpos of comparing differences resulting from changing font parameters.</li>
+    <li>Two fonts with varying values of the parameters above for the purpose of comparing differences resulting from changing font parameters.</li>
    </ol>
   </dd>
   <dt>Output</dt>
@@ -167,11 +166,13 @@
   <button id="OpenUserFonts">Open User Font Section</button>
   <section id="UserFontContainer">
   <div id="UserFontProp" role="form">
-   <p><label for="UserFontFamily">User's Font Family</label>
-   <input type="text" id="UserFontFamily"  value="">
-    <a href="FamilyList.html">Family List</a></p>
-   <!--p><label for="UserFontURL">Font URL for Web fonts</label>
-   <input type="url" id="UserFontURL" value="" > </p-->
+   <p>
+    <label id="labelU" for="inputU">Font Family</label>
+    <input id="inputU" type="text">
+    <button id="buttonU">Select Family</button>
+		<form id="formU"></form>
+		</p>
+   <p>
    <p><label for="UserFontSize">Font Size in PX units</label>
    <input id="UserFontSize" type="number" value="16" step="0.5"></p>
    <p><label for="UserFontLetSp">Letter Spacing in EM units above normal</label>
@@ -187,18 +188,18 @@
  <button id="OpenCompFont">Open Author Font Section</button>
  <section id="CompFontContainer">
   <div id="CompFontProp" role="form">
-   <p><label for="CompFontFamily">Author Font Family</label>
-   <input id="CompFontFamily" type="text" required>
-    <a href="FamilyList.html">Family List</a></p>
-   <!--<p><label for="CompFontURL">Font URL for Web fonts</label>
-   <input id="CompFontURL" type="url" value=""></p>  -->
+   <p>
+    <label id="labelC" for="inputC">Font Family</label>
+    <input id="inputC" type="text">
+    <button id="buttonC">Select Family</button>
+   </p>
+		<form id="formC"></form>
    <p><label for="CompFontSize">Font Size PX units</label>
    <input id="CompFontSize" type="number" value="16"></p>
    <p><label for="CompFontLetSp">Letter Spacing in EM units above normal</label>
     <input id="CompFontLetSp" type="number" value="0" step="0.01"></p>
    <p><label for="CompFontWdSp">Word Spacing in EM units above normal</label>
     <input id="CompFontWdSp"  type="number" value="0" step="0.01"></p>
-   <!--button-- Id="LoadCompFont">Load Comparison Font</button-->
   </div>
   <button id="CloseCompFont">Close the Author Font</button>
   </section>
@@ -210,7 +211,7 @@
    <!- Enter String -->
    <div id="ChrStrEntryForm" role="form">
     <label for="ChrStrText">Enter the Text String to Measure</label>
-    <textarea id="ChrStrText" placeholder="No input will result in the default Latin script character set" value=''></textarea>
+    <textarea id="ChrStrText" 							placeholder="No input will result in the default Latin character set" ></textarea>
    </div>
    <!-- View String -->
    <!-- Help -->
@@ -234,11 +235,343 @@
   <p id='compareNode' class="Measure"></p>
 
  </article>
- <!-- JavaScript -->
- <article id="js">
- <script src="FDSDefine.js"></script>
- <script src="MeasNComp.js"></script>
- <script src="FDSListen.js"></script>
+ <article id="fontFamilyForm">
+	 <fieldset>
+		 <fieldset id="fontRadio">
+			 <p style="font-family: 'Arial' !important;">
+				 <label for="Arial">Arial (Il1 5S 0O)</label>
+				 <input type="radio" id="Arial">
+			 </p>
+			 <p style="font-family: 'Arial Black'; !important">
+				 <label for="Arial Black">Arial Black (Il1 5S 0O)</label>
+				 <input type="radio" id="Arial Black">
+			 </p>
+			 <p style="font-family: 'Arimo';">
+				 <label for="Arimo">Arimo (Il1 5S 0O)</label>
+				 <input type="radio" id="Arimo">
+			 </p>
+			 <p style="font-family: 'Arvo';">
+				 <label for="Arvo">Arvo (Il1 5S 0O)</label>
+				 <input type="radio" id="Arvo">
+			 </p>
+			 <p style="font-family: 'Asap';">
+				 <label for="Asap">Asap (Il1 5S 0O)</label>
+				 <input type="radio" id="Asap">
+			 </p>
+			 <p style="font-family: 'Bitter';">
+				 <label for="Bitter">Bitter (Il1 5S 0O)</label>
+				 <input type="radio" id="Bitter">
+			 </p>
+			 <p style="font-family: 'Bree Serif';">
+				 <label for="Bree Serif">Bree Serif (Il1 5S 0O)</label>
+				 <input type="radio" id="Bree Serif">
+			 </p>
+			 <p style="font-family: 'Cabin';">
+				 <label for="Cabin">Cabin (Il1 5S 0O)</label>
+				 <input type="radio" id="Cabin">
+			 </p>
+			 <p style="font-family: 'Catamaran';">
+				 <label for="Catamaran">Catamaran (Il1 5S 0O)</label>
+				 <input type="radio" id="Catamaran">
+			 </p>
+			 <p style="font-family: 'Comic Sans MS';">
+				 <label for="Comic Sans MS">Comic Sans MS (Il1 5S 0O)</label>
+				 <input type="radio" id="Comic Sans MS">
+			 </p>
+			 <p style="font-family: 'Courier';">
+				 <label for="Courier">Courier (Il1 5S 0O)</label>
+				 <input type="radio" id="Courier">
+			 </p>
+			 <p style="font-family: 'Courier';">
+				 <label for="Courier New">Courier New (Il1 5S 0O)</label>
+				 <input type="radio" id="Courier New">
+			 </p>
+			 <p style="font-family:'Crimson Text';">
+				 <label for="Crimson Text">Crimson Text (Il1 5S 0O)</label>
+				 <input type="radio" id="Crimson Text">
+			 </p>
+			 <p style="font-family:'Dosis';">
+				 <label for="Dosis">Dosis (Il1 5S 0O)</label>
+				 <input type="radio" id="Dosis">
+			 </p>
+			 <p style="font-family:'Droid Sans';">
+				 <label for="Droid Sans">Droid Sans (Il1 5S 0O)</label>
+				 <input type="radio" id="Droid Sans">
+			 </p>
+			 <p style="font-family:'Droid Serif';">
+				 <label for="Droid Serif">Droid Serif (Il1 5S 0O)</label>
+				 <input type="radio" id="Droid Serif">
+			 </p>
+			 <p style="font-family:'Exo 2';">
+				 <label for="Exo 2">Exo 2 (Il1 5S 0O)</label>
+				 <input type="radio" id="Exo 2">
+			 </p>
+			 <p style="font-family:'Fira Sans';">
+				 <label for="Fira Sans">Fira Sans (Il1 5S 0O)</label>
+				 <input type="radio" id="Fira Sans">
+			 </p>
+			 <p style="font-family:'Fjalla One';">
+				 <label for="Fjalla One">Fjalla One (Il1 5S 0O)</label>
+				 <input type="radio" id="Fjalla One">
+			 </p>
+			 <p style="font-family:'Georgia';">
+				 <label for="Georgia">Georgia (Il1 5S 0O)</label>
+				 <input type="radio" id="Georgia">
+			 </p>
+			 <p style="font-family:'Helvetica';">
+				 <label for="Helvetica">Helvetica (Il1 5S 0O)</label>
+				 <input type="radio" id="Helvetica">
+			 </p>
+			 <p style="font-family:'Hind';">
+				 <label for="Hind">Hind (Il1 5S 0O)</label>
+				 <input type="radio" id="Hind">
+			 </p>
+			 <p style="font-family:'Impact';">
+				 <label for="Impact">Impact (Il1 5S 0O)</label>
+				 <input type="radio" id="Impact">
+			 </p>
+			 <p style="font-family:'Inconsolata';">
+				 <label for="Inconsolata">Inconsolata (Il1 5S 0O)</label>
+				 <input type="radio" id="Inconsolata">
+			 </p>
+			 <p style="font-family:'Indie Flower';">
+				 <label for="Indie Flower">Indie Flower (Il1 5S 0O)</label>
+				 <input type="radio" id="Indie Flower">
+			 </p>
+			 <p style="font-family:'Josefin Sans';">
+				 <label for="Josefin Sans">Josefin Sans (Il1 5S 0O)</label>
+				 <input type="radio" id="Josefin Sans">
+			 </p>
+			 <p style="font-family:'Lato';">
+				 <label for="Lato">Lato (Il1 5S 0O)</label>
+				 <input type="radio" id="Lato">
+			 </p>
+			 <p style="font-family:'Libre Baskerville';">
+				 <label for="Libre Baskerville">Libre Baskerville (Il1 5S 0O)</label>
+				 <input type="radio" id="Libre Baskerville">
+			 </p>
+			 <p style="font-family:'Lobster';">
+				 <label for="Lobster">Lobster (Il1 5S 0O)</label>
+				 <input type="radio" id="Lobster">
+			 </p>
+			 <p style="font-family:'Lora';">
+				 <label for="Lora">Lora (Il1 5S 0O)</label>
+				 <input type="radio" id="Lora">
+			 </p>
+			 <p style="font-family:'Merriweather';">
+				 <label for="Merriweather">Merriweather (Il1 5S 0O)</label>
+				 <input type="radio" id="Merriweather">
+			 </p>
+			 <p style="font-family:'Merriweather Sans';">
+				 <label for="Merriweather Sans">Merriweather Sans (Il1 5S 0O)</label>
+				 <input type="radio" id="Merriweather Sans">
+			 </p>
+			 <p style="font-family:'Montserrat';">
+				 <label for="Montserrat">Montserrat (Il1 5S 0O)</label>
+				 <input type="radio" id="Montserrat">
+			 </p>
+			 <p style="font-family:'Noto Sans';">
+				 <label for="Noto Sans">Noto Sans (Il1 5S 0O)</label>
+				 <input type="radio" id="Noto Sans">
+			 </p>
+			 <p style="font-family:'Noto Serif';">
+				 <label for="Noto Serif">Noto Serif (Il1 5S 0O)</label>
+				 <input type="radio" id="Noto Serif">
+			 </p>
+			 <p style="font-family:'Nunito';">
+				 <label for="Nunito">Nunito (Il1 5S 0O)</label>
+				 <input type="radio" id="Nunito">
+			 </p>
+			 <p style="font-family:'Open Sans';">
+				 <label for="Open Sans">Open Sans (Il1 5S 0O)</label>
+				 <input type="radio" id="Open Sans">
+			 </p>
+			 <p style="font-family:'Oswald';">
+				 <label for="Oswald">Oswald (Il1 5S 0O)</label>
+				 <input type="radio" id="Oswald">
+			 </p>
+			 <p style="font-family:'Oxygen';">
+				 <label for="Oxygen">Oxygen (Il1 5S 0O)</label>
+				 <input type="radio" id="Oxygen">
+			 </p>
+			 <p style="font-family:'Playfair Display';">
+				 <label for="Playfair Display">Playfair Display (Il1 5S 0O)</label>
+				 <input type="radio" id="Playfair Display">
+			 </p>
+			 <p style="font-family:'Poppins';">
+				 <label for="Poppins">Poppins (Il1 5S 0O)</label>
+				 <input type="radio" id="Poppins">
+			 </p>
+			 <p style="font-family:'PT Sans';">
+				 <label for="PT Sans">PT Sans (Il1 5S 0O)</label>
+				 <input type="radio" id="PT Sans">
+			 </p>
+			 <p style="font-family:'PT Sans Narrow';">
+				 <label for="PT Sans Narrow">PT Sans Narrow (Il1 5S 0O)</label>
+				 <input type="radio" id="PT Sans Narrow">
+			 </p>
+			 <p style="font-family:'PT Serif';">
+				 <label for="PT Serif">PT Serif (Il1 5S 0O)</label>
+				 <input type="radio" id="PT Serif">
+			 </p>
+			 <p style="font-family:'Raleway';">
+				 <label for="Raleway">Raleway (Il1 5S 0O)</label>
+				 <input type="radio" id="Raleway">
+			 </p>
+			 <p style="font-family:'Roboto';">
+				 <label for="Roboto">Roboto (Il1 5S 0O)</label>
+				 <input type="radio" id="Roboto">
+			 </p>
+			 <p style="font-family:'Roboto Condensed';">
+				 <label for="Roboto Condensed">Roboto Condensed (Il1 5S 0O)</label>
+				 <input type="radio" id="Roboto Condensed">
+			 </p>
+			 <p style="font-family:'Roboto Mono';">
+				 <label for="Roboto Mono">Roboto Mono (Il1 5S 0O)</label>
+				 <input type="radio" id="Roboto Mono">
+			 </p>
+			 <p style="font-family:'Roboto Slab';">
+				 <label for="Roboto Slab">Roboto Slab (Il1 5S 0O)</label>
+				 <input type="radio" id="Roboto Slab">
+			 </p>
+			 <p style="font-family:'Times';">
+				 <label for="Times">Times (Il1 5S 0O)</label>
+				 <input type="radio" id="Times">
+			 </p>
+			 <p style="font-family:'Times New Roman';">
+				 <label for="Times New Roman">Times New Roman (Il1 5S 0O)</label>
+				 <input type="radio" id="Times New Roman">
+			 </p>
+			 <p style="font-family:'Trebuchet MS';">
+				 <label for="Trebuchet MS">Trebuchet MS (Il1 5S 0O)</label>
+				 <input type="radio" id="Trebuchet MS">
+			 </p>
+			 <p style="font-family:'Ubuntu';">
+				 <label for="Ubuntu">Ubuntu (Il1 5S 0O)</label>
+				 <input type="radio" id="Ubuntu">
+			 </p>
+			 <p style="font-family:'Verdana';">
+				 <label for="Verdana">Verdana (Il1 5S 0O)</label>
+				 <input type="radio" id="Verdana">
+			 </p>
+			 <p style="font-family:'Yanone Kaffeesatz';">
+				 <label for="Yanone Kaffeesatz">Yanone Kaffeesatz (Il1 5S 0O)</label>
+				 <input type="radio" id="Yanone Kaffeesatz">
+			 </p>
+		 </fieldset>
+	 </fieldset>
  </article>
 </body>
+<script>
+	(	function loadInterface () {
+			// context structures
+			const label = 0;
+			const input = 1;
+			let contextObj = {
+				user: {
+					name: 'U',
+					e: document.createElement('fieldset')
+				},
+				compare: {
+					name: 'C',
+					e: document.createElement('fieldset')
+				}
+			};
+			// initialize field set elements
+			let fldSet = document.getElementById('fontRadio');
+			let inpTab = fldSet.getElementsByTagName('p');
+			contextObj.user.e.innerHTML = fldSet.innerHTML;
+			contextObj.compare.e.innerHTML = fldSet.innerHTML;
+			// loop by context
+			for (let fld in contextObj) {
+				let cFldSet = contextObj[fld];
+				let context = cFldSet.name;
+				let formX = document.getElementById(`form${context}`);
+				let loopTab = cFldSet.e.getElementsByTagName('p');
+				let legend=document.createElement('legend');
+				// loop by paragraph element
+				// initially all elements are equal
+				// we change the loopTab
+				for (let i = 0; i < inpTab.length; i++) {
+					let rbi = inpTab[i].children;
+					let rbl = loopTab[i].children;
+					rbl[label].htmlFor =
+						`radio${i.toString()}${context}`;
+					rbl[input].value = rbi[input].id; //This order
+					rbl[input].id = rbl[label].htmlFor;// is important
+					rbl[input].name= 'fam';
+					rbl[input].style.visibility="hidden"
+
+				}
+				cFldSet.e.id=`fieldset${cFldSet.name}`;
+				legend.innerText=`Choose the ${(context==='U') ? 'user': 'author'} font`;
+				formX.innerHTML = cFldSet.e.outerHTML;
+				formX.insertBefore(
+					legend,
+					document.getElementById(cFldSet.e.id)
+				);
+				formX.style.display = 'none';
+			}
+			document.getElementById(`fontFamilyForm`).remove();
+		}
+	)()
+</script>
+<script>
+	(function Controls (){
+
+		// Radio Button Events
+		let contextObj = {
+			user: {
+				name: 'U',
+				e: document.getElementById(`fieldsetU`)
+			},
+			compare: {
+				name: 'C',
+				e: document.getElementById(`fieldsetC`)
+			}
+		};
+		//////////////////////
+		// Define some events
+		// Radio button listeners
+		for (let c in contextObj) {
+			contextObj[c].e.addEventListener(
+				'click',
+				function () {
+					let radioTab = contextObj[c].e.getElementsByTagName('input');
+					let fId = `form${contextObj[c].name}`;
+					let f=document.getElementById(fId);
+					let inpId = `input${contextObj[c].name}`;
+					let inp= document.getElementById(inpId);
+					for (let i = 0; i < radioTab.length; i++) {
+						if (radioTab[i].checked) {
+							inp.value= radioTab[i].value;
+							inp.style.fontFamily=inp.value;
+							f.style.display='none';
+						}
+					}
+				}
+			);
+		}
+		////////////////////////
+		// Select Font Family from a List listener
+		for (let c in contextObj) {
+			let bId=`button${contextObj[c].name}`;
+			let fId= `form${contextObj[c].name}`;
+			let b =	document.getElementById(bId);
+			let f = document.getElementById(fId);
+
+			//////////////////////
+			// display the family list
+			b.addEventListener('click',
+				function (){
+					f.style.display= 'block';
+				});
+		}
+	})()
+</script>
+<article id="scriptFiles">
+	<script src="FDSDefine.js"></script>
+	<script src="MeasNComp.js"></script>
+	<script src="FDSListen.js"></script>
+</article>
 </html>
