@@ -242,13 +242,13 @@
 
  </article>
  <article id="fontFamilyForm">
-	 <fieldset>
+	 <form>
 		 <fieldset id="fontRadio">
-			 <p style="font-family: 'Arial' !important;">
+			 <p style="font-family: 'Arial';">
 				 <label for="Arial">Arial (Il1 5S 0O)</label>
 				 <input type="radio" id="Arial">
 			 </p>
-			 <p style="font-family: 'Arial Black'; !important">
+			 <p style="font-family: 'Arial Black';">
 				 <label for="Arial Black">Arial Black (Il1 5S 0O)</label>
 				 <input type="radio" id="Arial Black">
 			 </p>
@@ -440,6 +440,10 @@
 				 <label for="Roboto Slab">Roboto Slab (Il1 5S 0O)</label>
 				 <input type="radio" id="Roboto Slab">
 			 </p>
+			 <p style="font-family:'Tahoma';">
+				 <label for="Tahoma">Tahoma (Il1 5S 0O)</label>
+				 <input type="radio" id="Tahoma">
+			 </p>
 			 <p style="font-family:'Times';">
 				 <label for="Times">Times (Il1 5S 0O)</label>
 				 <input type="radio" id="Times">
@@ -465,7 +469,8 @@
 				 <input type="radio" id="Yanone Kaffeesatz">
 			 </p>
 		 </fieldset>
-	 </fieldset>
+
+	 </form>
  </article>
 </body>
 <script>
@@ -553,6 +558,7 @@
 							inp.value= radioTab[i].value;
 							inp.style.fontFamily=inp.value;
 							f.style.display='none';
+							inp.focus();
 						}
 					}
 				}
@@ -565,7 +571,6 @@
 			let fId= `form${contextObj[c].name}`;
 			let b =	document.getElementById(bId);
 			let f = document.getElementById(fId);
-
 			//////////////////////
 			// display the family list
 			b.addEventListener('click',
