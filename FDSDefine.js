@@ -38,9 +38,7 @@
   let boxDisplay = (context === 'user') ? this.uBoxDisplay : this.cBoxDisplay;
   // Input Forms for Fonts in HTML doc
   let fontFormNode= (context === 'user') ? document.getElementById('UserFontProp') : document.getElementById('CompFontProp');
-  alert(context);
   let fFInput= fontFormNode.getElementsByClassName('compile');
-  alert(fFInput.length);
   // Set up the Measurement Text String
   let textString = this.textString;
   let tsLen= this.textLen;
