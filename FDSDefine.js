@@ -35,6 +35,7 @@
   // Set up the Measurement Text String
   let txtStr = document.getElementById('ChrStrText').value;
   this.textString= (txtStr !== '') ? txtStr : defaultTestString;
+  // Special case if measuring one character
   if (this.textString.length===1) {
    this.textString+=this.textString;
    this.oneLen=true;

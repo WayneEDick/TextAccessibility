@@ -1,6 +1,7 @@
 /**
  * Created by Wayne on 5/18/2017.
  */
+//todo output measurement character string with user / author statistics
 (function (){
 function Measure () {
 	this.l= new window.FDS_Locker()
@@ -74,11 +75,7 @@ Measure.prototype.statsOut = function () {
  // The Answer Table in the HTML
  let answerSection = document.getElementById('answerSection');
  let answerEntries = answerSection.getElementsByTagName('p');
- /*console.log(`Load Content`)  /**/
- // Load Content
- // Font Family
- //alert(`split font family ${uBox.style.fontFamily.split(',')[0]}`);
- uFam.innerText= `User: font family= ${uBox.style.fontFamily.split(',')[0]}`;
+  uFam.innerText= `User: font family= ${uBox.style.fontFamily.split(',')[0]}`;
  cFam.innerText= 'Author: font family= '+cBox.style.fontFamily;
  // Font Size
  uSize.innerText= ', size= '+uBox.style.fontSize;
