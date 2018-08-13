@@ -7,6 +7,14 @@
 // Todo de-rigidify numeric lookup
  const fam = 0, size = 1, lSp = 2, wSp =3;
  const usrIdx= 0, cmpIdx = 1;
+ const defaultTestString =
+	 '!"#$% '+ "&'()* "+ "+,-./ "+
+	 "01234 "+ "56789 "+ ":;<=> "+
+	 "?@ABC "+ "DEFGH "+ "IJKLM "+
+	 "NOPQR "+ "STUVW "+ "XYZ[\ "+
+	 "]^_`a "+ "bcdef "+ "ghijk "+
+	 "lmnop "+ "qrstu "+ "vwxyz "+
+	 "{|}~";
 
  // Locker Constructor
  function Locker() {
@@ -26,8 +34,7 @@
   ///////////////////////////////////////
   // Set up the Measurement Text String
   let txtStr = document.getElementById('ChrStrText').value;
-  let defaultString = ' !"#$%&' + "'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~";
-  this.textString= (txtStr !== '') ? txtStr : defaultString;
+  this.textString= (txtStr !== '') ? txtStr : defaultTestString;
   if (this.textString.length===1) {
    this.textString+=this.textString;
    this.oneLen=true;
