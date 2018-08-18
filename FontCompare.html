@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--Todo Sort Out Input kludge
+		Class instead of id?
+		Input element?
+		User Input Values?-->
 <head>
  <meta charset="UTF-8">
  <title>Font Data Analysis</title>
@@ -63,9 +67,9 @@
    text-align: left;
   }
   button {
-   margin: 10px 0 10px 0;
    display: block;}
-	button, input, textarea {
+	button, input {
+		margin: 10px 0 10px 0;
 		background-color: #f8f0d4;
 		border: #a0522d solid thin;
 	}
@@ -75,6 +79,8 @@
    height: 10em;
    overflow: visible;
    margin: 1% 5% 1% 2%;
+   background-color: #f8f0d4;
+	 border: #a0522d solid thin;
   }
   article, section {
    padding: 0.5% 5% 1% 5%;
@@ -82,12 +88,14 @@
   #ComputeGroup {padding: 0;}
   #Overview, #fontFamilyForm {display: none;}
   #FontGroup, #UserFontContainer,
-  #CompFontContainer, #ChrStrGroup,
-  /*#ComputeGroup, #zeroLength {
+  #CompFontContainer, #ChrStrGroup, #answerSection
+  {
    display: none;
-  }*/
+  }
 	#labelU, #labelC, #inputU, #inputC,
-	#buttonU, #buttonC {display: inline;}
+	#buttonU, #buttonC {
+		display: inline;
+	}
   #Locker {
    visibility: hidden;
    padding: 0;
@@ -169,8 +177,10 @@
 		<!-- Font Family -->
 		<p>
     <label id="labelU" for="inputU">Font Family</label>
-    <input id="inputU" type="text" class="compile">
-    <button id="buttonU">Select Family</button>
+		<button id="buttonU">Select from List</button>
+    <input id="inputU" type="text" class="compile" readonly="readonly"
+		 placeholder=" sans-serif"
+		>
 	 </p>
 		<!-- Table of Families -- Runtime Input -->
 	 	<form id="formU"></form>
@@ -195,10 +205,12 @@
 		<!-- Comparison (author) Font Properties -->
 		<!-- Font Family -->
 		<p>
-    <label id="labelC" for="inputC">Font Family</label>
-    <input id="inputC" type="text" class="compile">
-    <button id="buttonC">Select Family</button>
-   </p>
+			<label id="labelC" for="inputC">Font Family</label>
+			<button id="buttonC">Select from List</button>
+			<input id="inputC" type="text" class="compile" readonly="readonly"
+						 placeholder=" sans-serif"
+			>
+		</p>
 		<!-- Table of Font Families -- Runtime Insertion-->
 		<form id="formC"></form>
 		<!-- Font Size -->
@@ -312,10 +324,6 @@
 				 <label for="Droid Serif">Droid Serif (Il1 5S 0O)</label>
 				 <input type="radio" id="Droid Serif">
 			 </p>
-			 <!--p style="font-family:'Exo 2';"-->
-				 <!--label-- for="Exo 2">Exo 2 (Il1 5S 0O)</label-->
-				 <!--input type="radio" id="Exo 2"-->
-			 <!--/p-->
 			 <p style="font-family:'Fira Sans';">
 				 <label for="Fira Sans">Fira Sans (Il1 5S 0O)</label>
 				 <input type="radio" id="Fira Sans">
@@ -590,3 +598,5 @@
 	<script src="FDSListen.js"></script>
 </article>
 </html>
+
+
