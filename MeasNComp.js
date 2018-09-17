@@ -1,19 +1,19 @@
 /**
  * Created by Wayne on 5/18/2017.
  */
+//todo output measurement character string with user / author statistics
 (function (){
-function Measure (l) {
- this.l= l;
+function Measure () {
+	this.l= new window.FDS_Locker()
+	//todo Close font tab
+	//todo Close Character String Elements
 
 }
+
 Measure.prototype.dfnStruct = function () {
  this.uBox = this.l.setupBox('user') ;
  this.cBox= this.l.setupBox('compare');
  this.len = this.l.textLen;
- /*this.uStartW = this.l.uWidth;
- this.cStartW = this.l.cWidth;
- this.l.uBox.width= this.uStartW;
- this.l.cBox.width= this.cStartW; /**/
  this.uWidth= this.fontTSetWidth(this.uBox);
  this.cWidth= this.fontTSetWidth(this.cBox);
  if (this.l.oneLen) {
@@ -27,13 +27,13 @@ Measure.prototype.dfnStruct = function () {
 Measure.prototype.boxHeight = function (box) {
  let h = getComputedStyle(box).height;
  return h.substr(0, h.length - 2)*1;
-}
+};
 Measure.prototype.boxWidth = function (box)  {
  let w = getComputedStyle(box).width;
  return w.substr(0, w.length - 2)*1;
-}
+};
 Measure.prototype.fontTSetWidth = function (box) {
- console.log(`in fontTSetWidth`)
+ console.log(`in fontTSetWidth`);
  let hNum = this.boxHeight(box);// Initial height
  let wNum = this.boxWidth(box);// Initial width
  // Approximate the font seqW
@@ -45,16 +45,16 @@ Measure.prototype.fontTSetWidth = function (box) {
  }
 
  wNum = this.boxWidth(box);
- console.log(`Pixel Width ${wNum}`)
+ console.log(`Pixel Width ${wNum}`);
  return wNum;
-}
+};
 
 Measure.prototype.statsOut = function () {
- console.log(`statsOut`)
+ console.log(`statsOut`);
  let boxes = document.getElementsByClassName('Display');
  let uBox = boxes[0];
  let cBox = boxes[1];
- console.log(`create Output Nodes`)
+ console.log(`create Output Nodes`);
  // Create Output Nodes
  let uFam=document.createElement('span') ;
  let cFam=document.createElement('span');
@@ -74,12 +74,8 @@ Measure.prototype.statsOut = function () {
  let cRow=document.createElement('p');
  // The Answer Table in the HTML
  let answerSection = document.getElementById('answerSection');
- let answerEntries = answerSection.getElementsByTagName('p')
- /*console.log(`Load Content`)  /**/
- // Load Content
- // Font Family
- //alert(`split font family ${uBox.style.fontFamily.split(',')[0]}`);
- uFam.innerText= `User: font family= ${uBox.style.fontFamily.split(',')[0]}`;
+ let answerEntries = answerSection.getElementsByTagName('p');
+  uFam.innerText= `User: font family= ${uBox.style.fontFamily.split(',')[0]}`;
  cFam.innerText= 'Author: font family= '+cBox.style.fontFamily;
  // Font Size
  uSize.innerText= ', size= '+uBox.style.fontSize;
@@ -137,7 +133,7 @@ Measure.prototype.statsOut = function () {
  answerSection.insertBefore(cRow, answerEntries[0]);
  answerSection.insertBefore(uRow, answerEntries[0]);
  // Insert the Conclusion Comparison
- answerSection.insertBefore(Ratio, answerEntries[0])
+ answerSection.insertBefore(Ratio, answerEntries[0]);
  // Hide Measure Boxes
  {
   let boxes= document.getElementsByClassName('Measure');

@@ -1,9 +1,9 @@
 /**
  * Created by Wayne on 6/30/2017.
  */
+
 // Open / Close Listeners
 (function () {
-
  // Open / Close Listeners
  // Font Elements
  let fOpen = document.getElementById('FontOpen');
@@ -54,8 +54,7 @@
  //Measurement Listeners
  compute.addEventListener('click',
   function () {
-   let l= new FDS_Locker();
-   let m= new Meas_Measure(l);
+   let m= new Meas_Measure();
    //l.setupBox('user','addEventListener');
    //l.setupBox('compare', 'addEventListener');
    m.dfnStruct();
@@ -70,8 +69,6 @@
    });
 })();
 
-// Help Listeners;
-(function (){})();
 
 //********************** End of Code  *************************
 
